@@ -1,0 +1,10 @@
+﻿@{ ViewData["Title"] = "Restaurant Menu"; }
+<div id="menuItems">
+    @foreach (var item in ViewBag.MainMenus)
+    {
+        <div>
+            <input type="checkbox" data-name="@item.name" /> <span> @item.name </span>
+        </div>
+    }
+</div>
+
